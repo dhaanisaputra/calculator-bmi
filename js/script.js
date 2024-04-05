@@ -32,24 +32,25 @@ form.addEventListener('submit', function(e) {
     var interpretDetail = document.getElementById('interpert-detail');
     var category = document.getElementById('category-bmi');
     var catText = document.getElementById('cat-text-bmi');
+    var names = document.getElementById('names').value;
     if (bmi < 18.5) {
         interpretation.innerHTML = 'Underweight'
-        interpretDetail.innerHTML = 'You Are Underweight'
+        interpretDetail.innerHTML = 'Hi, '+names+ ' ' +age+ '(yo) You Are Underweight'
         category.innerHTML = 'Kurang dari 18.5'
         catText.innerHTML = 'Anda berada dalam kategori Underweight atau kurang berat badan. Cara terbaik untuk menaikkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga. Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menaikkan berat badan hingga batas normal.'
     } else if (bmi >= 18.5 && bmi < 25) {
         interpretation.innerHTML = 'Normal weight'
-        interpretDetail.innerHTML = 'You Are Normal weight'
+        interpretDetail.innerHTML = 'Hi, '+names+ ' ' +age+ '(yo) You Are Normal weight'
         category.innerHTML = 'Diantara 18.5 - 24.9'
         catText.innerHTML = 'Anda berada dalam kategori Normal weight atau berat badan normal. Dianjurkan untuk tetap menjaga pola makan dan berolahraga'
     } else if (bmi >= 25 && bmi < 30) {
         interpretation.innerHTML = 'Overweight'
-        interpretDetail.innerHTML = 'You Are Overweight'
+        interpretDetail.innerHTML = 'Hi, '+names+ ' ' +age+ '(yo) You Are Overweight'
         category.innerHTML = 'Diantara 25 - 29.9'
         catText.innerHTML = 'Anda berada dalam kategori Overweight atau berat badan berlebih. Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga. Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.'
     } else {
         interpretation.innerHTML = 'Obese'
-        interpretDetail.innerHTML = 'You Are Obese'
+        interpretDetail.innerHTML = 'Hi, '+names+ ' ' +age+ '(yo) You Are Obese'
         category.innerHTML = 'Lebih dari 30'
         catText.innerHTML = 'Anda berada dalam kategori Obesitas atau terlalu gemuk. Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga. Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.'
     }

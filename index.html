@@ -2,6 +2,7 @@
 <head>
     <title>Kalkulator BMI</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/script.js"></script>
 </head>
 
@@ -22,6 +23,10 @@
         
                 <!-- Input Section -->
                 <form class="container-form" id="bmiForm">
+                    <div>
+                        <label>Nama Anda</label> <br/>
+                        <input type="text" name="requirements" id="names" required>
+                    </div>
                     <div>
                         <label>Jenis Kelamin</label> <br/>
                         <input type="radio" name="gender" id="gender-man">
@@ -84,7 +89,7 @@
                 </section>
 
                 <!-- button konsultasi dan Registrasi -->
-                <div>
+                <div class="btn-consult-regist">
                     <button type="button" id="consultation">Konsultasi Ahli Gizi via Aplikasi</button>
                     <button type="button" id="registration">Registrasi Online Ahli Gizi</button>
                 </div>
